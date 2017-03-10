@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="trans_white">#ffffff</color>
+    <color name="txts">#ffffff</color>
+    <color name="material_blue">#2196F3</color>
+
+    <color name="material_l">#9C27B0</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="black">#000000</color>
+    <color name="bg_col">#15313e</color>
+
+    <color name="colorFAB">#2196F3</color>
+    <color name="card_bg">#554c4d4a</color>
+</resources>
+
+

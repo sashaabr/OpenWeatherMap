@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/light_m"
+    android:id="@+id/main">
+    <!-- Main ListView
+         Always give id value as list(@android:id/list)
+    -->
+
+
+    <LinearLayout
+        android:layout_marginTop="56dp"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="42dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/condIcon" />
+
+        <TextView
+
+            android:textColor="@color/txts"
+            android:layout_marginLeft="16dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34"
+            android:id="@+id/temp"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_weight="0.34" />
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/txts"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cond Descr"
+        android:id="@+id/condDescr"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:textColor="@color/txts"
+        android:layout_marginTop="16dp"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:id="@+id/cityText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:background="@drawable/prs"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivPressure"
+        android:layout_below="@+id/condDescr"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+    <ImageView
+        android:background="@drawable/humidity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/ivPressure"
+        android:layout_alignLeft="@+id/ivPressure"
+        android:layout_alignStart="@+id/ivPressure" />
+    <ImageView
+        android:background="@drawable/wind"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:textSize="30dp"
+        android:textColor="@color/txts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pressure"
+        android:id="@+id/press"
+        android:layout_alignTop="@+id/ivPressure"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/imageView2" />
+
+    <TextView
+        android:textSize="30dp"
+        android:textColor="@color/txts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hum"
+        android:id="@+id/hum"
+        android:layout_below="@+id/press"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/imageView2" />
+
+    <TextView
+        android:textSize="25dp"
+        android:textColor="@color/txts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wSpe"
+        android:id="@+id/windSpeed"
+
+        android:layout_alignTop="@+id/windDeg"
+        android:layout_alignLeft="@+id/condDescr"
+        android:layout_alignStart="@+id/condDescr" />
+
+    <TextView
+        android:textSize="25dp"
+        android:textColor="@color/txts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wDeg"
+        android:id="@+id/windDeg"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toRightOf="@+id/cityText"
+        android:layout_toEndOf="@+id/cityText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editcity"
+            android:layout_marginBottom="50dp"
+            android:layout_above="@+id/spinner2"
+            android:layout_toLeftOf="@+id/btnSEarch"
+            android:layout_toStartOf="@+id/btnSEarch" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/gobtn"
+            android:id="@+id/btnSEarch"
+            android:layout_alignBottom="@+id/editcity"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="41dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
